@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Bootstrap Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<style>
+    .team-banner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0;
+        background: linear-gradient(to right, #1a1a2e, #111);
+        position: relative;
+        top: 500px;
+    }
+
+    .team {
+        text-align: center;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+
+    .team img {
+        height: 60px;
+        margin-bottom: 5px;
+        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.4));
+    }
+
+    @media (max-width: 576px) {
+      .team-item img { height: 44px; }
+      .team-banner { top: 10%; padding: 8px; }
+    }
+</style>
+
+<body>
+
+    <div class="p-3 mb-2 bg-black text-white" style="height: auto;">
+
+
+
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Teams">Teams</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Sponsors">Sponsors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#Shop">Shop</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#News">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Contacts">Contacts</a>
+            </li>
+
+        </ul>
+
+        <div class="container mt-5">
+            <h1 class="text-center">Welcome to My Landing Page</h1>
+            <p class="text-center text-muted" style="color: azure;">A mini project using Bootstrap</p>
+        </div>
+
+
+        <div class="card text-bg-dark">
+            <img src="Dota2.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h5 class="card-title" style="text-align: center;">Dota 2 Hub</h5>
+                <p class="card-text" style="text-align: center;">Built for players, eSports fans, and every hero who
+                    carries the team to victory. Titans Collide in the Ultimate Battle for the Ancients!
+                <p class="card-text" style="text-align: center;"> For competitors, team players, and fans who thrive in
+                    high-intensity battles.
+                </p>
+                <p class="card-text" style="text-align: center;"><small></small></p>
+                <button type="button" class="btn btn-primary btn-lg" style="display: block; margin: 0 auto;">Learn
+                    More</button>
+
+
+                <div class="team-banner">
+                    <div class="team">
+                        <img src="Team Falcons.png" alt="Fighters1">
+                        <p>Team Falcons</p>
+                    </div>
+                    <div class="team">
+                        <img src="Team Spirit.png" alt="Tigers">
+                        <p>Team Spirit</p>
+                    </div>
+                    <div class="team">
+                        <img src="Mouz.png" alt="Rhino">
+                        <p>Mouz</p>
+                    </div>
+                    <div class="team">
+                        <img src="Xtreme Gaming.png" alt="B2 Jersey">
+                        <p>Xtreme Gaming</p>
+                    </div>
+                    <div class="team">
+                        <img src="Tundra.png" alt="White Wolfs">
+                        <p>Tundra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
